@@ -1,0 +1,3 @@
+INFO    2021-03-04 11:59:03,204 [main] base.BaseTest  - Config properties loaded !!!
+INFO    2021-03-04 11:59:03,206 [main] base.BaseTest  - OR properties loaded !!!
+INFO    2021-03-04 11:59:12,908 [main] base.BaseTest  - Navigating to : https://app.fincart.com/user/login/F_kn9A6dyCUE0uGvF3JsouAM8hAjbzyYmm1wyajaecaTMkj8HA0O1A%3D%3D

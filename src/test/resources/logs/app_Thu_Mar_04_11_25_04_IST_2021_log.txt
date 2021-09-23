@@ -1,0 +1,3 @@
+INFO    2021-03-04 11:25:05,037 [main] base.BaseTest  - Config properties loaded !!!
+INFO    2021-03-04 11:25:05,053 [main] base.BaseTest  - OR properties loaded !!!
+INFO    2021-03-04 11:25:11,945 [main] base.BaseTest  - Launching IE

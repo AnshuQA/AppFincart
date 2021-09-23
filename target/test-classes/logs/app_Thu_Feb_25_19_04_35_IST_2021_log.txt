@@ -1,0 +1,3 @@
+INFO    2021-02-25 19:04:35,118 [main] base.BaseTest  - Config properties loaded !!!
+INFO    2021-02-25 19:04:35,118 [main] base.BaseTest  - OR properties loaded !!!
+INFO    2021-02-25 19:04:38,426 [main] base.BaseTest  - Launching Chrome

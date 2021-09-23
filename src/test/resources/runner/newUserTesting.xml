@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Suite">
+
+
+<listeners>
+    <listener class-name="listeners.CustomListeners" />
+     <listener class-name="org.uncommons.reportng.HTMLReporter" />
+  
+  </listeners>
+
+	
+	
+
+
+	 <!-- Test -->
+	<test name="NewUserTesting">
+		<classes>
+			<class name="testcases.NewUserWithKYC" />
+
+		</classes>
+		
+	</test> <!-- Test -->
+	
+	
+	
+
+</suite> <!-- Suite -->
