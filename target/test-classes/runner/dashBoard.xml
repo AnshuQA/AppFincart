@@ -9,19 +9,8 @@
   
   </listeners>
 
-	<test name="Login Test Test">
-		<classes>
-			<class name="testcases.LoginTest" />
-
-		</classes>
-		
-	</test> <!-- Test -->
 	
-	
-	
-
-
-	<test name="Additional Purchage Test">
+	<test name="DashBorad Test">
 		<classes>
 			<class name="testcases.DashboardTest" />
 

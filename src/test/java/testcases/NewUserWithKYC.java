@@ -1,5 +1,6 @@
 package testcases;
 
+import org.openqa.selenium.By;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -13,37 +14,56 @@ import pages.QuickSip;
 import pages.SIPaddCart;
 import pages.TaxPlanning;
 
-
-public class NewUserWithKYC extends BaseTest{
+public class NewUserWithKYC extends BaseTest {
 	public static LoginRegister login = new LoginRegister();
 	public static Goals gaol = new Goals();
 	public static GoalAddCart gaolcart = new GoalAddCart();
-    public static QuickSip qsip = new QuickSip();
-    public static SIPaddCart sipcart = new SIPaddCart();
-    public static TaxPlanning taxpl = new TaxPlanning();
-    public static BestSaver saver = new BestSaver();
-    public static KYCandKAF kyctest = new KYCandKAF();
-	@Test(priority=1)
+	public static QuickSip qsip = new QuickSip();
+	public static SIPaddCart sipcart = new SIPaddCart();
+	public static TaxPlanning taxpl = new TaxPlanning();
+	public static BestSaver saver = new BestSaver();
+	public static KYCandKAF kyctest = new KYCandKAF();
+
+	@Test(priority = 1)
 	public void goalAddtocartTest() throws InterruptedException {
 		login.newUserwithKYC();
-		
-		  gaol.setNewGoalButton(); 
-		  
-		  gaol.addReatirmentgoal(); Reporter.log("Goal add Successfully");
-		  gaolcart.goalInvestBtn(); gaolcart.recomOneTime();
-		  Reporter.log("Recommended Scheme one Time add Successfully");
-		  gaolcart.addMoreSchemeBtn(); gaolcart.recoMonthly();
-		  Reporter.log("Recommended Scheme Monthly add Successfully");
-		  gaolcart.addMoreSchemeBtn(); gaolcart.searchSchemeButton();
-		  gaolcart.selectScheme(); gaolcart.searchSchMonthly();
-		  Reporter.log("Search Scheme Monthly add Successfully");
-		  gaolcart.addMoreSchemeBtn(); gaolcart.searchShmOneTime();
-		  Reporter.log("Search Scheme OneTime add Successfully"); gaol.goalButton();
-		  gaol.removeOneGoal();
-		 
+
+		gaol.goalButton();
+		int sizea = driver
+				.findElements(By.xpath("/html/body/div[1]/div/div[2]/div/div/div/div/div/div/div[5]/div[2]/a/h4"))
+				.size();
+		if (sizea > 0) {
+			gaol.removeOneGoal();
+
+		}
+
+		gaol.addHomeGoal();
+		Reporter.log("Goal add Successfully");
+		gaolcart.goalInvestBtn();
+		gaolcart.recomOneTime();
+		Reporter.log("Recommended Scheme one Time add Successfully");
+		gaolcart.addMoreSchemeBtn();
+		gaolcart.recoMonthly();
+		Reporter.log("Recommended Scheme Monthly add Successfully");
+		gaolcart.addMoreSchemeBtn();
+		gaolcart.searchSchemeButton();
+		gaolcart.selectScheme();
+		gaolcart.searchSchMonthly();
+		Reporter.log("Search Scheme Monthly add Successfully");
+		gaolcart.addMoreSchemeBtn();
+		gaolcart.searchShmOneTime();
+		Reporter.log("Search Scheme OneTime add Successfully");
+		gaol.goalButton();
+		gaol.removeOneGoal();
+
 	}
-	@Test(priority=2)
+
+	@Test(priority = 2)
 	public void sipAddtocartTest() throws InterruptedException {
+
+		qsip.quickSipButton();
+		driver.get("https://app.fincart.com/user/login/");
+		login.newUserwithKYC();
 		qsip.quickSipButton();
 		Reporter.log("Quci SIP add Successfully");
 		qsip.sipPage();
@@ -56,10 +76,18 @@ public class NewUserWithKYC extends BaseTest{
 		qsip.quickSipButton();
 		qsip.removeSip();
 	}
-	@Test(priority=3)
-	public void taxPlanningaddtoCart() throws InterruptedException {
-		//login.newUserwithKYC();
+
+	@Test(priority = 3)
+	public void taxPlanningaddtoCart() throws InterruptedException { // login.newUserwithKYC();
+
 		taxpl.taxPlanningButton();
+		int sizea = driver
+				.findElements(By.xpath("/html/body/div[1]/div/div[2]/div/div/div/div/div[1]/div/div[5]/div[1]/a/h4"))
+				.size();
+		if (sizea > 0) {
+			gaol.removeOneGoal();
+
+		}
 		taxpl.addTaxPlanning();
 		Reporter.log("Tax Planning added Successfully");
 		taxpl.investTaxSaving();
@@ -68,22 +96,17 @@ public class NewUserWithKYC extends BaseTest{
 		taxpl.removeTaxPlanning();
 		Reporter.log("Tax Planning remove Successfully");
 		login.newlogOut();
-		
-		
-	
-		
+
 	}
-	/*@Test(priority=4)
-	public void bestSaverAddtoCart() throws InterruptedException {
-		login.launchNewTab();
-		login.additionalPurchaseLogin();
-		saver.bestSaverButton();
-		saver.addBestSaver();
-		Reporter.log("Best saver add Successfully");
-		login.logOut();
-		System.out.println("end11111");
-	
-	}*/
-		
-	
+
+	/*
+	 * @Test(priority=4) public void bestSaverAddtoCart() throws
+	 * InterruptedException { login.launchNewTab(); login.additionalPurchaseLogin();
+	 * saver.bestSaverButton(); saver.addBestSaver();
+	 * Reporter.log("Best saver add Successfully"); login.logOut();
+	 * System.out.println("end11111");
+	 * 
+	 * }
+	 */
+
 }

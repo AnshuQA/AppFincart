@@ -1,0 +1,4 @@
+INFO    2022-05-16 17:16:59,703 [main] base.BaseTest  - Config properties loaded !!!
+INFO    2022-05-16 17:16:59,705 [main] base.BaseTest  - OR properties loaded !!!
+INFO    2022-05-16 17:17:03,053 [main] base.BaseTest  - Launching Chrome
+INFO    2022-05-16 17:17:11,680 [main] base.BaseTest  - Navigating to : https://app.fincart.com/user/login/

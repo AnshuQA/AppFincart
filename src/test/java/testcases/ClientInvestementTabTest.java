@@ -12,9 +12,10 @@ public class ClientInvestementTabTest extends BaseTest {
 	public static LoginRegister login = new LoginRegister();
 	public static Goals goal = new Goals();
 	public static ClientInvesmetTab invest = new ClientInvesmetTab();
-	@Test(priority=1)
+
+	@Test(priority = 1)
 	public void investmentTab() throws InterruptedException {
-		
+
 		login.additionalPurchaseLogin();
 		goal.goalButton();
 		Reporter.log("Goal investment open Successfully");
@@ -26,10 +27,7 @@ public class ClientInvestementTabTest extends BaseTest {
 		Reporter.log("Client All Investment Account open  Successfully");
 		invest.passbook();
 		Reporter.log("Passbook Open  Successfully");
-		
-		
-		
+
 	}
-	
 
 }

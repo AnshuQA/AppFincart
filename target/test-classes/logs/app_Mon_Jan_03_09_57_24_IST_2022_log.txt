@@ -1,0 +1,2 @@
+INFO    2022-01-03 09:57:24,746 [main] base.BaseTest  - Config properties loaded !!!
+INFO    2022-01-03 09:57:24,748 [main] base.BaseTest  - OR properties loaded !!!

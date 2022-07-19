@@ -12,7 +12,7 @@
 <body>
 <h1>Additional Purchage Test</h1>
 <p>
-  Test duration: 175.834s
+  Test duration: 199.990s
 </p>
 
 
@@ -28,7 +28,7 @@
                   additinalPurchaseTest
       </td>
   <td class="duration">
-    43.937s
+    71.540s
   </td>
   <td class="result">
         
@@ -40,29 +40,108 @@
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;md-option ng-repeat=&quot;Objective in ObjectiveList&quot; value=&quot;Equity&quot; tabindex=&quot;0&quot; class=&quot;ng-scope md-ink-ripple&quot; role=&quot;option&quot; aria-selected=&quot;false&quot; id=&quot;select_option_211&quot; style=&quot;&quot;&gt;...&lt;/md-option&gt; is not clickable at point (630, 345). Other element would receive the click: &lt;md-option ng-repeat=&quot;Objective in ObjectiveList&quot; value=&quot;Debt&quot; tabindex=&quot;0&quot; class=&quot;ng-scope md-ink-ripple&quot; aria-selected=&quot;true&quot; role=&quot;option&quot; id=&quot;select_option_210&quot; selected=&quot;selected&quot; style=&quot;&quot;&gt;...&lt;/md-option&gt;<br/>
-&nbsp; (Session info: chrome=93.0.4577.82)<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
-System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;input_23&quot;]&quot;}<br/>
+&nbsp; (Session info: chrome=103.0.5060.114)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;<br/>
+System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56923}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
-Session ID: 4142a9c6b02bfe6a39965784cb0745ff</b></a><br />
+Command: [ef0fbbd8ef785b9ee9a945de1312156b, findElement {using=xpath, value=//*[@id=&quot;input_23&quot;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57795/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: ef0fbbd8ef785b9ee9a945de1312156b</b></a><br />
     <div class="stackTrace" id="exception-0">
               java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br />
               java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
               java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
               java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br />
-              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)<br />
-              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
-              pages.AdditionalPurchase.additinalPurchase(AdditionalPurchase.java:43)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)<br />
+              pages.AdditionalPurchase.additinalPurchase(AdditionalPurchase.java:39)<br />
               testcases.AdditonalPurchaseTest.additinalPurchaseTest(AdditonalPurchaseTest.java:28)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  liquiLoanTest
+      </td>
+  <td class="duration">
+    34.516s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <a href=null target="_blank">Capture Screenshot</a>
+                                <br>
+                                <a href=null target="_blank"><img src=null height=200 width=200></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;ng-scope&quot;&gt;...&lt;/span&gt; is not clickable at point (867, 242). Other element would receive the click: &lt;div class=&quot;swal-modal&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot;&gt;...&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=103.0.5060.114)<br/>
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;<br/>
+System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [ef0fbbd8ef785b9ee9a945de1312156b, clickElement {id=835e2bb2-4035-476d-92f0-90d03a40e34f}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57795/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Element: [[ChromeDriver: chrome on WINDOWS (ef0fbbd8ef785b9ee9a945de1312156b)] -&gt; xpath: /html/body/div[1]/div/div[2]/div/div/div/div[2]/div/md-card/md-card-content/div/div[2]/div[3]/md-input-container/button/span]<br/>
+Session ID: ef0fbbd8ef785b9ee9a945de1312156b</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              pages.AdditionalPurchase.liquiLoanPage(AdditionalPurchase.java:219)<br />
+              testcases.AdditonalPurchaseTest.liquiLoanTest(AdditonalPurchaseTest.java:45)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -108,7 +187,7 @@ Session ID: 4142a9c6b02bfe6a39965784cb0745ff</b></a><br />
                   gaolButton
       </td>
   <td class="duration">
-    11.611s
+    9.872s
   </td>
   <td class="result">
         
@@ -122,7 +201,7 @@ Session ID: 4142a9c6b02bfe6a39965784cb0745ff</b></a><br />
                   insuranceTest
       </td>
   <td class="duration">
-    35.351s
+    33.658s
   </td>
   <td class="result">
         
@@ -136,33 +215,16 @@ Session ID: 4142a9c6b02bfe6a39965784cb0745ff</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  liquiLoanTest
-      </td>
-  <td class="duration">
-    33.612s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        LiquiLoan Test Successfull
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
                   pmsTest
       </td>
   <td class="duration">
-    51.323s
+    50.404s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        LiquiLoan Test Successfull
+                        PMS Test Successfull
                   </div>
     
 
