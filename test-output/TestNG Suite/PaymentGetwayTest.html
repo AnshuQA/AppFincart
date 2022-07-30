@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 16 10:38:11 IST 2022</td>
+<td>Started on:</td><td>Sat Jul 30 10:43:37 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>40 seconds (40599 ms)</td>
+<tr><td>Total time:</td><td>91 seconds (91789 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,24 +76,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testcases.PaymentGetwayTest.paymentGetwayTest()'><b>paymentGetwayTest</b><br>Test class: testcases.PaymentGetwayTest<br/>
-<a href="#Output-1609215923" onClick='toggleBox("Output-1609215923", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-84976327" onClick='toggleBox("Output-84976327", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1609215923" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1609215923">
+<a href="#Output-84976327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-84976327">
+Net Banking Working Fine<br/>
+Other Card working fine<br/>
 <a href=null target="_blank">Capture Screenshot</a><br/>
 <br><br/>
 <a href=null target="_blank"><img src=null height=200 width=200></a><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/md-bottom-sheet[1]/div[2]/md-list[1]/md-list-item[3]/div[1]/div[1]/md-checkbox[1]/div[1]&quot;}
   (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;172.24.128.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ef0fbbd8ef785b9ee9a945de1312156b, clickElement {id=0683e909-0059-49e9-bb83-cfce5c1a7ddf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57795/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ef0fbbd8ef785b9ee9a945de1312156b)] -&gt; xpath: /html/body/div[1]/div/div[2]/div/div/div/div[2]/md-toolbar[1]/div/button]
-Session ID: ef0fbbd8ef785b9ee9a945de1312156b
+Command: [0c6d8305c765c851442d4d1efed74094, findElement {using=xpath, value=//body/md-bottom-sheet[1]/div[2]/md-list[1]/md-list-item[3]/div[1]/div[1]/md-checkbox[1]/div[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57264/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6d8305c765c851442d4d1efed74094
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -101,21 +103,23 @@ Session ID: ef0fbbd8ef785b9ee9a945de1312156b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.PaymentGetway.paymentContinueBtn(PaymentGetway.java:13)
-	at testcases.PaymentGetwayTest.paymentGetwayTest(PaymentGetwayTest.java:20)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pages.PaymentGetway.upi(PaymentGetway.java:62)
+	at testcases.PaymentGetwayTest.paymentGetwayTest(PaymentGetwayTest.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1609215923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1609215923'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace84976327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace84976327'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/md-bottom-sheet[1]/div[2]/md-list[1]/md-list-item[3]/div[1]/div[1]/md-checkbox[1]/div[1]&quot;}
   (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;172.24.128.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ef0fbbd8ef785b9ee9a945de1312156b, clickElement {id=0683e909-0059-49e9-bb83-cfce5c1a7ddf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57795/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ef0fbbd8ef785b9ee9a945de1312156b)] -&gt; xpath: /html/body/div[1]/div/div[2]/div/div/div/div[2]/md-toolbar[1]/div/button]
-Session ID: ef0fbbd8ef785b9ee9a945de1312156b
+Command: [0c6d8305c765c851442d4d1efed74094, findElement {using=xpath, value=//body/md-bottom-sheet[1]/div[2]/md-list[1]/md-list-item[3]/div[1]/div[1]/md-checkbox[1]/div[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57264/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6d8305c765c851442d4d1efed74094
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -128,10 +132,12 @@ Session ID: ef0fbbd8ef785b9ee9a945de1312156b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.PaymentGetway.paymentContinueBtn(PaymentGetway.java:13)
-	at testcases.PaymentGetwayTest.paymentGetwayTest(PaymentGetwayTest.java:20)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pages.PaymentGetway.upi(PaymentGetway.java:62)
+	at testcases.PaymentGetwayTest.paymentGetwayTest(PaymentGetwayTest.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -161,8 +167,8 @@ Session ID: ef0fbbd8ef785b9ee9a945de1312156b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>40</td>
-<td>testcases.PaymentGetwayTest@2dbf4cbd</td></tr>
+<td>91</td>
+<td>testcases.PaymentGetwayTest@5b408dc3</td></tr>
 </table><p>
 </body>
 </html>

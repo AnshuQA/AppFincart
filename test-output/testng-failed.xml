@@ -11,6 +11,7 @@
         <methods>
           <include name="setUp"/>
           <include name="taxPlanningaddtoCart"/>
+          <include name="sipAddtocartTest"/>
         </methods>
       </class> <!-- testcases.NewUserWithKYC -->
     </classes>
@@ -30,7 +31,7 @@
       <class name="testcases.AdditonalPurchaseTest">
         <methods>
           <include name="setUp"/>
-          <include name="liquiLoanTest"/>
+          <include name="gaolButton"/>
           <include name="additinalPurchaseTest"/>
         </methods>
       </class> <!-- testcases.AdditonalPurchaseTest -->
@@ -41,6 +42,7 @@
       <class name="testcases.DashboardTest">
         <methods>
           <include name="setUp"/>
+          <include name="goalWiseInvestmentTest"/>
           <include name="ulipTest"/>
         </methods>
       </class> <!-- testcases.DashboardTest -->

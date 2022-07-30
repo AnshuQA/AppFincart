@@ -12,7 +12,7 @@
 <body>
 <h1>Edit Profile Test</h1>
 <p>
-  Test duration: 348.415s
+  Test duration: 380.517s
 </p>
 
 
@@ -28,7 +28,7 @@
                   addressRequestTest
       </td>
   <td class="duration">
-    243.629s
+    266.082s
   </td>
   <td class="result">
         
@@ -40,13 +40,33 @@
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#SearchByEmail&quot;}<br/>
+&nbsp; (Session info: chrome=103.0.5060.114)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;<br/>
+System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;172.24.128.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [0c6d8305c765c851442d4d1efed74094, findElement {using=id, value=SearchByEmail}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57264/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 0c6d8305c765c851442d4d1efed74094</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:99)<br />
-              org.testng.Assert.failNotEquals(Assert.java:1037)<br />
-              org.testng.Assert.assertTrue(Assert.java:45)<br />
-              org.testng.Assert.assertTrue(Assert.java:55)<br />
-              pages.EditProfile.operationAddresBtn(EditProfile.java:227)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)<br />
+              pages.EditProfile.operationAddresBtn(EditProfile.java:218)<br />
               testcases.EditProfileTest.addressRequestTest(EditProfileTest.java:26)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
@@ -84,7 +104,7 @@
                   bankRequestTest
       </td>
   <td class="duration">
-    104.786s
+    114.435s
   </td>
   <td class="result">
         
@@ -96,15 +116,15 @@
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/div[1]/div/app-login/div/div[2]/div/div[2]/div/div/form/div[1]/input&quot;}<br/>
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#SearchByEmail&quot;}<br/>
 &nbsp; (Session info: chrome=103.0.5060.114)<br/>
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;<br/>
-System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+System info: host: &apos;DESKTOP-JD55J81&apos;, ip: &apos;172.24.128.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Command: [ef0fbbd8ef785b9ee9a945de1312156b, findElement {using=xpath, value=/html/body/app-root/div[1]/div/app-login/div/div[2]/div/div[2]/div/div/form/div[1]/input}]<br/>
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57795/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
-Session ID: ef0fbbd8ef785b9ee9a945de1312156b</b></a><br />
+Command: [0c6d8305c765c851442d4d1efed74094, findElement {using=id, value=SearchByEmail}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ANSHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57264/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 0c6d8305c765c851442d4d1efed74094</b></a><br />
     <div class="stackTrace" id="exception-1">
               java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br />
@@ -122,8 +142,8 @@ Session ID: ef0fbbd8ef785b9ee9a945de1312156b</b></a><br />
               org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
               org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)<br />
               org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)<br />
-              pages.LoginRegister.OperationLogin(LoginRegister.java:22)<br />
-              testcases.EditProfileTest.bankRequestTest(EditProfileTest.java:40)<br />
+              pages.EditProfile.operationBankRequest(EditProfile.java:307)<br />
+              testcases.EditProfileTest.bankRequestTest(EditProfileTest.java:42)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />

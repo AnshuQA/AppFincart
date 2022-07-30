@@ -14,9 +14,9 @@ public class CASuploadTest extends BaseTest {
 
 	@Test
 	public void casUploadTest() throws InterruptedException, AWTException {
-		// login.editProfileLogin();
-		// cas.casBtn();
-		// cas.uploadLatestCAS();
+		login.editProfileLogin();
+		cas.casBtn();
+		cas.uploadLatestCAS();
 
 	}
 

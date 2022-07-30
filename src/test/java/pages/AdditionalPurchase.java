@@ -17,14 +17,14 @@ public class AdditionalPurchase extends BaseTest {
 		driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/a[1]/h4[1]"))
 				.click();
-		Thread.sleep(8000);
+		Thread.sleep(80000);
 		driver.findElement(By.xpath("//md-icon[@class='ng-scope material-icons']")).click();
 	}
 
 	public void additinalPurchase() throws InterruptedException {
 
 		// One Time
-		Thread.sleep(9000);
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//span[contains(text(),'OneTime')]")).click();
 		driver.findElement(By.xpath(
 				"/html/body/div[4]/md-dialog/md-dialog-content/md-tabs/md-tabs-content-wrapper/md-tab-content[1]/div/md-content/div/div[1]/md-input-container/input"))
@@ -36,51 +36,48 @@ public class AdditionalPurchase extends BaseTest {
 				"/html/body/div[4]/md-dialog/md-dialog-content/md-tabs/md-tabs-wrapper/md-tabs-canvas/md-pagination-wrapper/md-tab-item[2]/span"))
 				.click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"input_23\"]")).sendKeys("1");
+		driver.findElement(By.xpath("//input[@id='input_44']")).sendKeys("1");
 
 		Thread.sleep(3000);
 		driver.findElement(
-				By.xpath("//*[@id=\"tab-content-12\"]/div/md-content/div/div[2]/md-input-container/md-checkbox/div[1]"))
+				By.xpath("//md-content[@ng-show=\"isRedAllow=='Y'\"]//div[@class='md-container md-ink-ripple']"))
 				.click();
-		Thread.sleep(5000);
-		driver.findElement(
-				By.xpath("//*[@id=\"tab-content-12\"]/div/md-content/div/div[2]/md-input-container/md-checkbox/div[1]"))
-				.click();
+
 //Swith
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//*[@id=\"tab-item-13\"]/span")).click();
-		Thread.sleep(3000);
-		List<WebElement> list1 = driver.findElements(By.xpath("//*[@id=\"select_value_label_24\"]/span[1]/div"));
+		driver.findElement(By.xpath("//md-tab-item[@id='tab-item-34']")).click();
+		Thread.sleep(5000);
+		List<WebElement> list1 = driver.findElements(By.xpath(
+				"//md-select-value[@id='select_value_label_45']//div[@class='md-text ng-binding'][normalize-space()='Debt']"));
 		list1.get(0).click();
-		driver.findElement(By.cssSelector("#select_option_211")).click();
+		driver.findElement(By.cssSelector("md-option[id='select_option_233'] div[class='md-text ng-binding']")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"input_30\"]")).sendKeys("1");
+		driver.findElement(By.xpath("//input[@id='input_51']")).sendKeys("1");
 
 		Thread.sleep(5000);
-		driver.findElement(By.xpath(
-				"//*[@id=\"tab-content-13\"]/div/md-content/div[2]/div[2]/md-input-container/md-checkbox/div[1]"))
-				.click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath(
-				"//*[@id=\"tab-content-13\"]/div/md-content/div[2]/div[2]/md-input-container/md-checkbox/div[1]"))
+		driver.findElement(
+				By.xpath("//md-content[@ng-show=\"isSwitchAllow=='Y'\"]//div[@class='md-container md-ink-ripple']"))
 				.click();
 
 //Monthly
 
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//md-tab-item[@id='tab-item-35']")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"tab-item-14\"]/span")).click();
+		driver.findElement(By.xpath("//input[@id='input_55']")).sendKeys("101");
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"input_34\"]")).sendKeys("101");
-		Thread.sleep(3000);
-		List<WebElement> list01 = driver.findElements(By.xpath("//*[@id=\"select_value_label_31\"]"));
+		List<WebElement> list01 = driver.findElements(By.xpath(
+				"//md-select-value[@id='select_value_label_52']//div[@class='md-text ng-binding'][normalize-space()='1 Year']"));
 		list01.get(0).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"select_option_100\"]")).click();
+		driver.findElement(By.xpath("//div[normalize-space()='20 Years']")).click();
 		Thread.sleep(3000);
-		List<WebElement> list02 = driver.findElements(By.xpath("//*[@id=\"select_value_label_32\"]"));
+		List<WebElement> list02 = driver.findElements(By.xpath(
+				"/html[1]/body[1]/div[4]/md-dialog[1]/md-dialog-content[1]/md-tabs[1]/md-tabs-content-wrapper[1]/md-tab-content[4]/div[1]/md-content[2]/div[2]/div[1]/md-input-container[1]/md-select[1]/md-select-value[1]/span[1]/div[1]"));
 		list02.get(0).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("/html/body/div[7]/md-select-menu/md-content/md-option[3]")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/div[6]/md-select-menu[1]/md-content[1]/md-option[3]/div[1]"))
+				.click();
 		Thread.sleep(5000);
 
 //STP	 
@@ -233,7 +230,7 @@ public class AdditionalPurchase extends BaseTest {
 	}
 
 	public void pmsPage() throws InterruptedException {
-		Thread.sleep(30000);
+		Thread.sleep(40000);
 		driver.findElement(By.xpath("//span[contains(text(),'Check Performance')]")).click();
 		Thread.sleep(10000);
 
